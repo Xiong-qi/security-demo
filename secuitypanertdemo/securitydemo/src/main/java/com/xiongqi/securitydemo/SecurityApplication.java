@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SecuritydemoApplication {
+public class SecurityApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecuritydemoApplication.class, args);
+        SpringApplication.run(SecurityApplication.class, args);
     }
 
     @GetMapping("/hello")

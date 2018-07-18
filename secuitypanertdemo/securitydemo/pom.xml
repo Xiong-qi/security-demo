@@ -42,6 +42,12 @@
                 <groupId>com.github.tomakehurst</groupId>
                 <artifactId>wiremock</artifactId>
             </dependency>
+
+            <!--lombok依赖注入-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+            </dependency>
         </dependencies>
 
     <build>
