@@ -10,6 +10,5 @@ buildNumber.properties
 .mvn/timing.properties
 
 # --> Intellij Idea
-.idea
 *.iml
 classes
