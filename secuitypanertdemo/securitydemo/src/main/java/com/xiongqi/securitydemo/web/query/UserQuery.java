@@ -1,4 +1,4 @@
-package com.xiongqi.securitydemo.query;
+package com.xiongqi.securitydemo.web.query;
 
 import lombok.Data;
 
