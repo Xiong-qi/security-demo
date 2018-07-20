@@ -15,7 +15,7 @@ public class User {
 
     public interface UserSimpleView{};
 
-    public interface UserDetailView {};
+    public interface UserDetailView extends UserSimpleView{};
 
     private String id;
 

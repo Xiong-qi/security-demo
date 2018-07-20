@@ -52,10 +52,8 @@ public class UserController {
     }
 
     @PostMapping
-    public User create(@Valid @RequestBody  User user, BindingResult errors){
-        if (errors.hasErrors()) {
-             errors.getAllErrors().stream().forEach(error-> System.out.println(error.getDefaultMessage()));
-        }
+    public User create(@Valid @RequestBody  User user){
+
         System.out.println(user);
 
         user.setId("1");
@@ -63,7 +61,7 @@ public class UserController {
     }
 
     @GetMapping
-    @JsonView(User.UserSimpleView.class)
+    @JsonView(User.UserDetailView.class)
     public List<User> query(UserQuery userQuery){
         ArrayList<User> users = new ArrayList<>();
         users.add(new User("xq","123456"));
